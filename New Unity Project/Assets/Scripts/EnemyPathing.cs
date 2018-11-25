@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour {
-	[SerializeField] WaveConfig waveconfig;
+	WaveConfig waveconfig;
 	List<Transform> Waypoints;
-	[SerializeField] float movspeed=2.0f;
+
 
 	int WaypointIndex=0;
 
@@ -21,12 +21,16 @@ public class EnemyPathing : MonoBehaviour {
 		Mov ();
 		
 	}
+	public void SetWaveConfig(WaveConfig waveconfig)
+	{
+		this.waveconfig = waveconfig;
+	}
 
 	void Mov ()
 	{
 		if (WaypointIndex <= Waypoints.Count - 1) {
 			var TargestLoc = Waypoints [WaypointIndex].transform.position;
-			var movmentspeed = movspeed * Time.deltaTime;
+			var movmentspeed =waveconfig.GetmovSpeed() * Time.deltaTime;
 			transform.position = Vector2.MoveTowards (transform.position, TargestLoc, movmentspeed);
 			if (Vector3.Distance(transform.position,TargestLoc) <= 0.1f) {
 				WaypointIndex++;
