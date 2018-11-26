@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212799079959649408}
   - component: {fileID: 50560267005897406}
   - component: {fileID: 70236381187066748}
+  - component: {fileID: 114811811054974554}
   m_Layer: 0
   m_Name: laserBlue03
   m_TagString: Untagged
@@ -77,6 +78,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.09, y: 0.37}
   m_Direction: 0
+--- !u!114 &114811811054974554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124221622283796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446bf02af331f4d4ca575ac1b9798fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!212 &212799079959649408
 SpriteRenderer:
   m_ObjectHideFlags: 1
