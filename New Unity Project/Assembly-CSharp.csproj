@@ -53,13 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Damage.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\EnemyPathing.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\player.cs" />
-     <Compile Include="Assets\Scripts\Shreder.cs" />
-     <Compile Include="Assets\Scripts\WaveConfig.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\Damage.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\EnemyPathing.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\player.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\Shreder.cs" />
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\WaveConfig.cs" />
      <None Include="Assets\Space Shooter Visual Assets\Spritesheet\sheet.xml" />
      <None Include="Assets\Space Shooter Visual Assets\license.txt" />
  <Reference Include="UnityEditor.StandardEvents">
