@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class player : MonoBehaviour {
-
+	[Header ("Player Movement")]
 	[SerializeField] float MovSpeed=10f;
 	[SerializeField] float padding=1f;
+	[SerializeField] int health=100;
+	[Header ("Projectile")]
 	[SerializeField] GameObject Laserprefab;
 	[SerializeField] float projectileSpeed=10f;
 	[SerializeField] float projectilefireperid=0.1f;
@@ -34,6 +36,19 @@ public class player : MonoBehaviour {
 		Move ();
 		Fire ();
 		
+	}
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		Damage damageDealer = other.gameObject.GetComponent<Damage> ();
+		ProcessHit (damageDealer);
+	}
+	
+	void ProcessHit (Damage damageDealer)
+	{
+		health -= damageDealer.GetDamage ();
+		if (health <= 0) {
+			Destroy (gameObject);
+		}
 	}
 
 	void Fire ()

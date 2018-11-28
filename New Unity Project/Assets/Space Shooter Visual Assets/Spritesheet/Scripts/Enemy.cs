@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour {
 		shotCounter -= Time.deltaTime;
 		if (shotCounter <= 0f) {
 			Fire();
+			shotCounter = Random.Range (minTimeBetweenShots, maxTimeBetweenShots);
 		}
 	}
 
