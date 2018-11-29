@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\BackgroundScrolling.cs" />
      <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\Damage.cs" />
      <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\Enemy.cs" />
      <Compile Include="Assets\Space Shooter Visual Assets\Spritesheet\Scripts\EnemyPathing.cs" />
